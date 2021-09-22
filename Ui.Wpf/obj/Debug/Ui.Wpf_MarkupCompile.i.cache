@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Jan\Programmierung\WpfScheduleControl\WpfScheduleControl\Ui.Wpf\obj\Debug\
+C:\Users\Jan\Programmierung\WpfScheduleControl\Ui.Wpf\obj\Debug\
 Ui.Wpf
 none
 false
 DEBUG;TRACE
-C:\Users\Jan\Programmierung\WpfScheduleControl\WpfScheduleControl\Ui.Wpf\App.xaml
-11151548125
+C:\Users\Jan\Programmierung\WpfScheduleControl\Ui.Wpf\App.xaml
+3219774591
 
-61434861427
-13-1505183044
-MainWindow.xaml;
+71358410053
+141999036650
+Assets\Styles.xaml;MainWindow.xaml;Views\ScheduleControlView.xaml;
 
 True
 

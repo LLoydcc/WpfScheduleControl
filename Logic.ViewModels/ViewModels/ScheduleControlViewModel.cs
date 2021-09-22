@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Logic.ViewModels
+namespace Logic.ViewModels.ViewModels
 {
-    public class Class1
+    public class ScheduleControlViewModel
     {
     }
 }

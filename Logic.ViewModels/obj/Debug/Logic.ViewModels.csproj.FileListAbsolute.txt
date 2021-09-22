@@ -1,0 +1,6 @@
+C:\Users\Jan\Programmierung\WpfScheduleControl\Logic.ViewModels\bin\Debug\Logic.ViewModels.dll
+C:\Users\Jan\Programmierung\WpfScheduleControl\Logic.ViewModels\bin\Debug\Logic.ViewModels.pdb
+C:\Users\Jan\Programmierung\WpfScheduleControl\Logic.ViewModels\obj\Debug\Logic.ViewModels.csproj.AssemblyReference.cache
+C:\Users\Jan\Programmierung\WpfScheduleControl\Logic.ViewModels\obj\Debug\Logic.ViewModels.csproj.CoreCompileInputs.cache
+C:\Users\Jan\Programmierung\WpfScheduleControl\Logic.ViewModels\obj\Debug\Logic.ViewModels.dll
+C:\Users\Jan\Programmierung\WpfScheduleControl\Logic.ViewModels\obj\Debug\Logic.ViewModels.pdb
