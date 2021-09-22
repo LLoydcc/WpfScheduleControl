@@ -21,3 +21,9 @@ C:\Users\Jan\Programmierung\WpfScheduleControl\Ui.Wpf\obj\Debug\Ui.Wpf.exe
 C:\Users\Jan\Programmierung\WpfScheduleControl\Ui.Wpf\obj\Debug\Ui.Wpf.pdb
 C:\Users\Jan\Programmierung\WpfScheduleControl\Ui.Wpf\obj\Debug\Views\ScheduleControlView.g.cs
 C:\Users\Jan\Programmierung\WpfScheduleControl\Ui.Wpf\obj\Debug\Views\ScheduleControlView.baml
+C:\Users\Jan\Programmierung\WpfScheduleControl\Ui.Wpf\obj\Debug\Views\Components\Day.g.cs
+C:\Users\Jan\Programmierung\WpfScheduleControl\Ui.Wpf\obj\Debug\Views\Components\Month.g.cs
+C:\Users\Jan\Programmierung\WpfScheduleControl\Ui.Wpf\obj\Debug\Views\Components\Week.g.cs
+C:\Users\Jan\Programmierung\WpfScheduleControl\Ui.Wpf\obj\Debug\Views\Components\Day.baml
+C:\Users\Jan\Programmierung\WpfScheduleControl\Ui.Wpf\obj\Debug\Views\Components\Month.baml
+C:\Users\Jan\Programmierung\WpfScheduleControl\Ui.Wpf\obj\Debug\Views\Components\Week.baml
