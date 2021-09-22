@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ui", "Ui", "{BF32950E-C37E-499D-B606-DBAA539CD9AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ui.Wpf", "Ui.Wpf\Ui.Wpf.csproj", "{E7B9F77D-AE73-4020-B692-95F09DEE83D5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logic", "Logic", "{01A0812C-068A-4158-9FD5-161362775602}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logic.ViewModels", "Logic.ViewModels\Logic.ViewModels.csproj", "{06B9CB62-EDB9-4FF7-962E-E0411034C95A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E7B9F77D-AE73-4020-B692-95F09DEE83D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7B9F77D-AE73-4020-B692-95F09DEE83D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7B9F77D-AE73-4020-B692-95F09DEE83D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7B9F77D-AE73-4020-B692-95F09DEE83D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06B9CB62-EDB9-4FF7-962E-E0411034C95A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06B9CB62-EDB9-4FF7-962E-E0411034C95A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06B9CB62-EDB9-4FF7-962E-E0411034C95A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06B9CB62-EDB9-4FF7-962E-E0411034C95A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E7B9F77D-AE73-4020-B692-95F09DEE83D5} = {BF32950E-C37E-499D-B606-DBAA539CD9AC}
+		{06B9CB62-EDB9-4FF7-962E-E0411034C95A} = {01A0812C-068A-4158-9FD5-161362775602}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7ED2B983-190B-45A8-9138-18D55F1665C0}
+	EndGlobalSection
+EndGlobal
