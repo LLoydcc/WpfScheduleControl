@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Logic.ViewModels.ViewModels
 {
-    public class ScheduleControlViewModel
+    public class ScheduleControlViewModel : ViewModelBase
     {
     }
 }
