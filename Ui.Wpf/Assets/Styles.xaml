@@ -1,9 +1,21 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-    <Style x:Key="MainWindow" TargetType="Window">
-        <Setter Property="Margin" Value="5"></Setter>
+
+    <Style x:Key="DarkModeBackgroundDockPanel" TargetType="DockPanel">
+        <Setter Property="Background" Value="#212121"></Setter>
     </Style>
-    <Style x:Key="DockPanel" TargetType="DockPanel">
-        <Setter Property="Background" Value="Aqua"></Setter>
+
+    <Style x:Key="DarkModeMenuGrid" TargetType="Grid">
+        <Setter Property="Background" Value="#303030"></Setter>
+    </Style>
+
+    <Style x:Key="DarkModeForgroundListBox" TargetType="ListBox">
+        <Setter Property="Background" Value="#424242"></Setter>
+    </Style>
+
+    <Style x:Key="BasicLabel" TargetType="Label">
+        <Setter Property="Foreground" Value="#FFFFFF"></Setter>
+        <Setter Property="HorizontalAlignment" Value="Center"></Setter>
+        <Setter Property="FontWeight" Value="SemiBold"></Setter>
     </Style>
 </ResourceDictionary>

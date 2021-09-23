@@ -1,4 +1,6 @@
-﻿using Logic.ViewModels.ViewModels.Components;
+﻿using Logic.ViewModels.Classes;
+using Logic.ViewModels.Functions;
+using Logic.ViewModels.ViewModels.Components;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -17,7 +19,13 @@ namespace Logic.ViewModels.ViewModels
             CurrentMonth = new Month();
             NameOfMonth = CurrentMonth.Indication;
         }
-
+        public ObservableCollection<string> WeekIndications
+        {
+            get
+            {
+                return new ObservableCollection<string>() { "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" };
+            }
+        }
         public string NameOfMonth 
         {
             get

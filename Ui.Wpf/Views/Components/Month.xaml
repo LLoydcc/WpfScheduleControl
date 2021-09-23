@@ -5,5 +5,5 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Ui.Wpf.Views.Components"
              mc:Ignorable="d">
-    <ListBox ItemsSource="{Binding Weeks}"></ListBox>
+    <ListBox ItemsSource="{Binding Weeks}" Style="{StaticResource DarkModeForgroundListBox}"></ListBox>
 </UserControl>

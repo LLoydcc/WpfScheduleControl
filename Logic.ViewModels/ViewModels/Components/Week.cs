@@ -11,15 +11,8 @@ namespace Logic.ViewModels.ViewModels.Components
     {
         public Week()
         {
-            Days = new ObservableCollection<Day>();
-            for (int i = 0; i < 7; i++)
-            {
-                Day day = new Day();
-                day.NumberOfDay = i.ToString();
-                Days.Add(day);
-            }
+                 
         }
-        public ObservableCollection<Day> Days { get; set; }
+        public ObservableCollection<Day> Days { get; set; }    
     }
-
 }
