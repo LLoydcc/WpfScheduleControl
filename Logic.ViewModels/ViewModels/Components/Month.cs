@@ -84,7 +84,11 @@ namespace Logic.ViewModels.ViewModels.Components
             DateTime eDate = new DateTime(Date.Year, Date.Month, 1);
             eDate = eDate.AddMonths(1).AddDays(-1);
             int eDay = (int)eDate.DayOfWeek - 1;
-            int offset = 6 - eDay;
+
+            /** we need to calculate 13-eDay to always fill 7 weeks.
+             *  If we want to display just the remaining week, we need to calculat 6-eDay.
+             * */
+            int offset = 13 - eDay;
             eDate = eDate.AddDays(offset);
 
             double range = (eDate - sDate).TotalDays + 1;
@@ -94,10 +98,6 @@ namespace Logic.ViewModels.ViewModels.Components
                 Week week = new Week();
                 for (int j = 0; j < 7; j++)
                 {
-                    
-                    //Day day = new Day();
-                    //day.NumberOfDay = sDate.Day.ToString();
-                    //day.Date = sDate;
                     week.Days.Add(modify(sDate));
                     sDate = sDate.AddDays(1);
 
@@ -120,23 +120,21 @@ namespace Logic.ViewModels.ViewModels.Components
             {
                 day.Inside = true;
             }
-
             return day;
         }
         private void setWeeks()
         {
-            WeekOne = Weeks[0];
-            WeekTwo = Weeks[1];
-            WeekThree = Weeks[2];
-            WeekFour = Weeks[3];
-            if(Weeks.Count > 4)
-            {
-                WeekFive = Weeks[4];
-            }            
+            WeekOne     = Weeks[0];
+            WeekTwo     = Weeks[1];
+            WeekThree   = Weeks[2];
+            WeekFour    = Weeks[3];            
+            WeekFive    = Weeks[4];
+
+            /** we need to check this in case of a leap year*/
             if(Weeks.Count > 5)
             {
                 WeekSix = Weeks[5];
-            }
+            }                       
         }
     }
 }
