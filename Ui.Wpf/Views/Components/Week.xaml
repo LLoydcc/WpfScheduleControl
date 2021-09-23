@@ -8,19 +8,25 @@
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="1"></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="1"></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="1"></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="1"></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="1"></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="1"></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <ContentControl Grid.Column="0" Content="{Binding DayOne}"></ContentControl>
-        <ContentControl Grid.Column="1" Content="{Binding DayTwo}"></ContentControl>
-        <ContentControl Grid.Column="2" Content="{Binding DayThree}"></ContentControl>
-        <ContentControl Grid.Column="3" Content="{Binding DayFour}"></ContentControl>
-        <ContentControl Grid.Column="4" Content="{Binding DayFive}"></ContentControl>
-        <ContentControl Grid.Column="5" Content="{Binding DaySix}"></ContentControl>
-        <ContentControl Grid.Column="6" Content="{Binding DaySeven}"></ContentControl>
+        <ContentControl Grid.Column="2" Content="{Binding DayTwo}"></ContentControl>
+        <ContentControl Grid.Column="4" Content="{Binding DayThree}"></ContentControl>
+        <ContentControl Grid.Column="6" Content="{Binding DayFour}"></ContentControl>
+        <ContentControl Grid.Column="8" Content="{Binding DayFive}"></ContentControl>
+        <ContentControl Grid.Column="10" Content="{Binding DaySix}"></ContentControl>
+        <ContentControl Grid.Column="12" Content="{Binding DaySeven}"></ContentControl>
     </Grid>
 </UserControl>

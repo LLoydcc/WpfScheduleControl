@@ -8,17 +8,22 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
+            <RowDefinition Height="1"></RowDefinition>
             <RowDefinition></RowDefinition>
+            <RowDefinition Height="1"></RowDefinition>
             <RowDefinition></RowDefinition>
+            <RowDefinition Height="1"></RowDefinition>
             <RowDefinition></RowDefinition>
+            <RowDefinition Height="1"></RowDefinition>
             <RowDefinition></RowDefinition>
+            <RowDefinition Height="1"></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
         <ContentControl Grid.Row="0" Content="{Binding WeekOne}"></ContentControl>
-        <ContentControl Grid.Row="1" Content="{Binding WeekTwo}"></ContentControl>
-        <ContentControl Grid.Row="2" Content="{Binding WeekThree}"></ContentControl>
-        <ContentControl Grid.Row="3" Content="{Binding WeekFour}"></ContentControl>
-        <ContentControl Grid.Row="4" Content="{Binding WeekFive}"></ContentControl>
-        <ContentControl Grid.Row="5" Content="{Binding WeekSix}"></ContentControl>
+        <ContentControl Grid.Row="2" Content="{Binding WeekTwo}"></ContentControl>
+        <ContentControl Grid.Row="4" Content="{Binding WeekThree}"></ContentControl>
+        <ContentControl Grid.Row="6" Content="{Binding WeekFour}"></ContentControl>
+        <ContentControl Grid.Row="8" Content="{Binding WeekFive}"></ContentControl>
+        <ContentControl Grid.Row="10" Content="{Binding WeekSix}"></ContentControl>
     </Grid>
 </UserControl>

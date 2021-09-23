@@ -13,11 +13,12 @@ namespace Logic.ViewModels.ViewModels.Components
         private ObservableCollection<Week> _weeks;
         private string _indication;
         private DateTime _date;
-        public Month()
+        public Month(DateTime date)
         {
-            Indication = MonthIndications[Today.Month - 1];
-            Weeks = new ObservableCollection<Week>();            
-            init();
+            Date = date;
+            Indication = MonthIndications[Date.Month - 1];
+            Weeks = new ObservableCollection<Week>();
+            update();
         }
         public Week WeekOne { get; set; }
         public Week WeekTwo { get; set; }
@@ -25,13 +26,6 @@ namespace Logic.ViewModels.ViewModels.Components
         public Week WeekFour { get; set; }
         public Week WeekFive { get; set; }
         public Week WeekSix { get; set; }
-        public DateTime Today
-        {
-            get
-            {
-                return DateFunctions.getToday();
-            }
-        }
         public DateTime Date
         {
             get
@@ -41,7 +35,7 @@ namespace Logic.ViewModels.ViewModels.Components
             set
             {
                 _date = value;
-                OnPropertyChanged(nameof(Date));
+                OnPropertyChanged(nameof(Month));
             }
         }
         public string Indication
@@ -79,16 +73,16 @@ namespace Logic.ViewModels.ViewModels.Components
         /// <summary>
         /// initializes the calendar and fills viewmodels
         /// </summary>
-        public void init()
+        public void update()
         {
-            DateTime sDate = new DateTime(Today.Year, Today.Month, 1);             
+            DateTime sDate = new DateTime(Date.Year, Date.Month, 1);             
             /** we need to calculate -1 because the start of the week is always a sunday (index 0). 
              *  But instead we want the week to begin at a monday. 
             */
             int sDay = (int)sDate.DayOfWeek - 1;
             sDate = sDate.AddDays(-sDay);
 
-            DateTime eDate = new DateTime(Today.Year, Today.Month, 1);
+            DateTime eDate = new DateTime(Date.Year, Date.Month, 1);
             eDate = eDate.AddMonths(1).AddDays(-1);
             int eDay = (int)eDate.DayOfWeek - 1;
             int offset = 6 - eDay;
@@ -118,8 +112,14 @@ namespace Logic.ViewModels.ViewModels.Components
             WeekTwo = Weeks[1];
             WeekThree = Weeks[2];
             WeekFour = Weeks[3];
-            WeekFive = Weeks[4];
-            //WeekSix = week;
+            if(Weeks.Count > 4)
+            {
+                WeekFive = Weeks[4];
+            }            
+            if(Weeks.Count > 5)
+            {
+                WeekSix = Weeks[5];
+            }
         }
     }
 }
