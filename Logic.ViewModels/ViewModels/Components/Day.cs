@@ -14,5 +14,6 @@ namespace Logic.ViewModels.ViewModels.Components
         }
         public string NumberOfDay { get; set; }
         public DateTime Date { get; set; }
+        public bool Inside { get; set; }
     }
 }

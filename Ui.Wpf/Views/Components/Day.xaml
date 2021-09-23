@@ -3,9 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:Ui.Wpf.Views.Components"
+             xmlns:local="clr-namespace:Ui.Wpf.Views.Components" 
+             xmlns:converters="clr-namespace:Ui.Wpf.Converters"
              mc:Ignorable="d">
-    <DockPanel Style="{StaticResource DarkModeItem}">
+    <UserControl.Resources>
+        <converters:DayBackgroundColorConverter x:Key="backgroundColorConverter"></converters:DayBackgroundColorConverter>
+    </UserControl.Resources>
+    <DockPanel Style="{StaticResource DarkModeItem}" Background="{Binding Inside, Converter={StaticResource backgroundColorConverter}, Mode=OneWay}">
         <Label Content="{Binding NumberOfDay}" Style="{StaticResource BasicLabel}"></Label>
     </DockPanel>
 </UserControl>

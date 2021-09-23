@@ -1,5 +1,4 @@
-﻿using Logic.ViewModels.Functions;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
@@ -94,17 +93,35 @@ namespace Logic.ViewModels.ViewModels.Components
             {
                 Week week = new Week();
                 for (int j = 0; j < 7; j++)
-                {                    
-                    Day day = new Day();
-                    day.NumberOfDay = sDate.Day.ToString();
-                    day.Date = sDate;
-                    week.Days.Add(day);
+                {
+                    
+                    //Day day = new Day();
+                    //day.NumberOfDay = sDate.Day.ToString();
+                    //day.Date = sDate;
+                    week.Days.Add(modify(sDate));
                     sDate = sDate.AddDays(1);
+
                 }
                 week.setDays();
                 Weeks.Add(week);
             }
             setWeeks();
+        }
+        private Day modify(DateTime sDate) 
+        {
+            Day day = new Day();
+            day.NumberOfDay = sDate.Day.ToString();
+            day.Date = sDate;
+
+            if(sDate.Month != Date.Month)
+            {
+                day.Inside = false;
+            } else
+            {
+                day.Inside = true;
+            }
+
+            return day;
         }
         private void setWeeks()
         {

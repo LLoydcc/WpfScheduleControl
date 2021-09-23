@@ -19,6 +19,12 @@
         </Setter>
     </Style>
 
+    <Style x:Key="DarkModeButton" TargetType="Button">
+        <Setter Property="Background" Value="#303030"></Setter>
+        <Setter Property="Foreground" Value="#FFFFFF"></Setter>
+        <Setter Property="FontWeight" Value="SemiBold"></Setter>
+    </Style>
+
     <Style x:Key="BasicLabel" TargetType="Label">
         <Setter Property="Foreground" Value="#FFFFFF"></Setter>
         <Setter Property="HorizontalAlignment" Value="Center"></Setter>
