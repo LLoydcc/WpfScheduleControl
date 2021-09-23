@@ -126,7 +126,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Converters\" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Logic.ViewModels\Logic.ViewModels.csproj">
       <Project>{06b9cb62-edb9-4ff7-962e-e0411034c95a}</Project>

@@ -11,8 +11,27 @@ namespace Logic.ViewModels.ViewModels.Components
     {
         public Week()
         {
-                 
+            Days = new ObservableCollection<Day>();
+           
+        }            
+        public ObservableCollection<Day> Days { get; set; }
+        public Day DayOne { get; set; }
+        public Day DayTwo { get; set; }
+        public Day DayThree { get; set; }
+        public Day DayFour { get; set; }
+        public Day DayFive { get; set; }
+        public Day DaySix { get; set; }
+        public Day DaySeven { get; set; }       
+        
+        public void setDays()
+        {
+            DayOne = Days[0];
+            DayTwo = Days[1];
+            DayThree = Days[2];
+            DayFour = Days[3];
+            DayFive = Days[4];
+            DaySix = Days[5];
+            DaySeven = Days[6];
         }
-        public ObservableCollection<Day> Days { get; set; }    
     }
 }

@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Ui.Wpf.Views.Components"
              mc:Ignorable="d">
-    <WrapPanel>
-        <TextBlock Text="{Binding NumberOfDay}"></TextBlock>
-    </WrapPanel>
+    <DockPanel Style="{StaticResource DarkModeItem}">
+        <Label Content="{Binding NumberOfDay}" Style="{StaticResource BasicLabel}"></Label>
+    </DockPanel>
 </UserControl>

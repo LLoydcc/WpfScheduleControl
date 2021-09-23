@@ -20,7 +20,7 @@ namespace Logic.ViewModels.Functions
 
         public static int getCountOfWeeksInMonth(double days)
         {
-            double weeks = days / 7;            
+            double weeks = days / 7;
             return Convert.ToInt32(Math.Ceiling(weeks));
         }
     }

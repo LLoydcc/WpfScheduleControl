@@ -14,9 +14,17 @@ namespace Logic.ViewModels.ViewModels.Components
         private string _indication;
         private DateTime _date;
         public Month()
-        {            
-            Indication = MonthIndications[Today.Month - 1];            
+        {
+            Indication = MonthIndications[Today.Month - 1];
+            Weeks = new ObservableCollection<Week>();            
+            init();
         }
+        public Week WeekOne { get; set; }
+        public Week WeekTwo { get; set; }
+        public Week WeekThree { get; set; }
+        public Week WeekFour { get; set; }
+        public Week WeekFive { get; set; }
+        public Week WeekSix { get; set; }
         public DateTime Today
         {
             get
@@ -67,10 +75,51 @@ namespace Logic.ViewModels.ViewModels.Components
                 OnPropertyChanged(nameof(Weeks));
             }
         }
-
-        public void update()
+        
+        /// <summary>
+        /// initializes the calendar and fills viewmodels
+        /// </summary>
+        public void init()
         {
-                      
+            DateTime sDate = new DateTime(Today.Year, Today.Month, 1);             
+            /** we need to calculate -1 because the start of the week is always a sunday (index 0). 
+             *  But instead we want the week to begin at a monday. 
+            */
+            int sDay = (int)sDate.DayOfWeek - 1;
+            sDate = sDate.AddDays(-sDay);
+
+            DateTime eDate = new DateTime(Today.Year, Today.Month, 1);
+            eDate = eDate.AddMonths(1).AddDays(-1);
+            int eDay = (int)eDate.DayOfWeek - 1;
+            int offset = 6 - eDay;
+            eDate = eDate.AddDays(offset);
+
+            double range = (eDate - sDate).TotalDays + 1;
+
+            for(int i = 0; i < (range / 7); i++)
+            {
+                Week week = new Week();
+                for (int j = 0; j < 7; j++)
+                {                    
+                    Day day = new Day();
+                    day.NumberOfDay = sDate.Day.ToString();
+                    day.Date = sDate;
+                    week.Days.Add(day);
+                    sDate = sDate.AddDays(1);
+                }
+                week.setDays();
+                Weeks.Add(week);
+            }
+            setWeeks();
+        }
+        private void setWeeks()
+        {
+            WeekOne = Weeks[0];
+            WeekTwo = Weeks[1];
+            WeekThree = Weeks[2];
+            WeekFour = Weeks[3];
+            WeekFive = Weeks[4];
+            //WeekSix = week;
         }
     }
 }

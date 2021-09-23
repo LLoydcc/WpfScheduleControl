@@ -1,5 +1,4 @@
-﻿using Logic.ViewModels.Classes;
-using Logic.ViewModels.Functions;
+﻿using Logic.ViewModels.Functions;
 using Logic.ViewModels.ViewModels.Components;
 using System;
 using System.Collections.Generic;

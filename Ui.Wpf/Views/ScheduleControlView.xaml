@@ -42,13 +42,13 @@
                     <ColumnDefinition></ColumnDefinition>
                     <ColumnDefinition></ColumnDefinition>
                 </Grid.ColumnDefinitions>
-                <Label Grid.Column="0" Style="{StaticResource BasicLabel}">Sunday</Label>
-                <Label Grid.Column="1" Style="{StaticResource BasicLabel}">Monday</Label>
-                <Label Grid.Column="2" Style="{StaticResource BasicLabel}">Tuesday</Label>
-                <Label Grid.Column="3" Style="{StaticResource BasicLabel}">Wednesday</Label>
-                <Label Grid.Column="4" Style="{StaticResource BasicLabel}">Thursday</Label>
-                <Label Grid.Column="5" Style="{StaticResource BasicLabel}">Friday</Label>
-                <Label Grid.Column="6" Style="{StaticResource BasicLabel}">Saturday</Label>
+                <Label Grid.Column="0" Style="{StaticResource BasicLabel}">Monday</Label>
+                <Label Grid.Column="1" Style="{StaticResource BasicLabel}">Tuesday</Label>
+                <Label Grid.Column="2" Style="{StaticResource BasicLabel}">Wednesday</Label>
+                <Label Grid.Column="3" Style="{StaticResource BasicLabel}">Thursday</Label>
+                <Label Grid.Column="4" Style="{StaticResource BasicLabel}">Friday</Label>
+                <Label Grid.Column="5" Style="{StaticResource BasicLabel}">Saturday</Label>
+                <Label Grid.Column="6" Style="{StaticResource BasicLabel}">Sunday</Label>
             </Grid>
             <ContentControl Grid.Row="4" Grid.Column="1" Content="{Binding CurrentMonth}"></ContentControl>
         </Grid>

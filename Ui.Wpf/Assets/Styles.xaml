@@ -13,6 +13,12 @@
         <Setter Property="Background" Value="#424242"></Setter>
     </Style>
 
+    <Style x:Key="DarkModeItem" TargetType="DockPanel">
+        <Setter Property="Background" Value="#505050">
+            
+        </Setter>
+    </Style>
+
     <Style x:Key="BasicLabel" TargetType="Label">
         <Setter Property="Foreground" Value="#FFFFFF"></Setter>
         <Setter Property="HorizontalAlignment" Value="Center"></Setter>
